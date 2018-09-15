@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="num 1" max_length="40" name="num_1" type="boolean"/>
+        <element label="num 1" max_length="40" name="num_1num_1" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Human Resources      [hr]" label="Request type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Human Resources      [hr]" sequence="0" value="Human Resources      [hr]"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Facilities      [facilities]" sequence="1" value="Facilities      [facilities]"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Legal      [legal]" sequence="2" value="Legal      [legal]"/>
+                <element inactive_on_update="false" label="PF" sequence="3" value="pf"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1      [legal1]" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1      [hr1]" sequence="0" value="human resources 1      [hr1]"/>
+                <element inactive_on_update="false" label="Human Resources 2      [hr2]" sequence="1" value="human resources 2      [hr2]"/>
+                <element inactive_on_update="false" label="Facilities 1      [facilities1]" sequence="2" value="facilities 1      [facilities1]"/>
+                <element inactive_on_update="false" label="Facilities 2      [facilities2]" sequence="3" value="facilities 2      [facilities2]"/>
+                <element inactive_on_update="false" label="Legal 1      [legal1]" sequence="4" value="legal 1      [legal1]"/>
+                <element inactive_on_update="false" label="Legal 2      [legal2]" sequence="5" value="legal 2      [legal2]"/>
+                <element inactive_on_update="false" label="pf1" sequence="6" value="pf1"/>
+                <element inactive_on_update="false" label="pf2" sequence="7" value="pf2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="sree" label="Name" mandatory="true" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Sree" sequence="0" value="sree"/>
+                <element inactive_on_update="false" label="Ganesh" sequence="1" value="ganesh"/>
+                <element inactive_on_update="false" label="Bala" sequence="2" value="bala"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="base_start=true" label="New Table Name" max_length="80" name="u_table_name_2" type="table_name"/>
+    </element>
+</database>
